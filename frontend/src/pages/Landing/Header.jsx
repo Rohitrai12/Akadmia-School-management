@@ -3,15 +3,13 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/Color-JO.png";
 import icon from "../../assets/browser.png";
 
+
 function Header() {
   const [isVisible, setIsVisible] = useState(false);
   const [navToggle, setNavToggle] = useState(false);
   const [showWhiteBackground, setShowWhiteBackground] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [activeLink, setActiveLink] = useState(null);
-
-
-
 
 
   const toggleInputVisibility = () => {
@@ -151,9 +149,9 @@ function Header() {
                 Contact Us
               </Link>
               <Link to={'/choose'}>
-                  <button className="lg:inline block font-semibold m-2 bg-[#091d4f] text-white p-2 w-[120px] rounded-full h-fit text-center active:scale-90 transition duration-300">
-                    sign in
-                  </button>
+                <button className="lg:inline block font-semibold m-2 bg-[#091d4f] text-white p-2 w-[120px] rounded-full h-fit text-center active:scale-90 transition duration-300">
+                  Sign In
+                </button>
               </Link>
             </div>
           </div>
@@ -168,17 +166,13 @@ function Header() {
 
           <div className="lg:flex items-center xl:w-[70%] justify-between mt-4 lg:mt-0 w-[80%]">
             {[
-
-
               { name: "K-12", link: "/k12" },
               { name: "Higher ED", link: "/higher-education" },
               { name: "Professional ED", link: "/professional-ed" },
               { name: "Resources", link: "/resources" },
               { name: "News & Events", link: "/news" },
               { name: "About Us", link: "/about" },
-              { name: "Get a Studio", link: "/choose", button: true },
-
-
+              { name: "Get a Studio", link: "#", button: true },
             ].map((item) => (
               <div
                 key={item.name}
