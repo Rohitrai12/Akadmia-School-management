@@ -5,14 +5,11 @@ const dotenv = require("dotenv")
 // const bodyParser = require("body-parser")
 const app = express()
 const Routes = require("./routes/route.js")
-const path= require("path")
-
 
 const PORT = process.env.PORT || 5000
 
 dotenv.config();
 
-app.use(express.static(path.join(__dirname, "public")));
 
 // app.use(bodyParser.json({ limit: '10mb', extended: true }))
 // app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }))
