@@ -11,8 +11,6 @@ import ClassOutlinedIcon from '@mui/icons-material/ClassOutlined';
 import SupervisorAccountOutlinedIcon from '@mui/icons-material/SupervisorAccountOutlined';
 import ReportIcon from '@mui/icons-material/Report';
 import AssignmentIcon from '@mui/icons-material/Assignment';
-import PolicyIcon from '@mui/icons-material/Policy';
-import LanguageIcon from '@mui/icons-material/Language';
 
 const SideBar = () => {
     const location = useLocation();
@@ -61,20 +59,6 @@ const SideBar = () => {
                     </ListItemIcon>
                     <ListItemText primary="Complains" />
                 </ListItemButton>
-
-                <ListItemButton component={Link} to="/Admin/hire">
-                    <ListItemIcon>
-                        <PolicyIcon color={location.pathname.startsWith("/Admin/complains") ? 'primary' : 'inherit'} />
-                    </ListItemIcon>
-                    <ListItemText primary="Hire Teachers" />
-                </ListItemButton>
-                <ListItemButton component={Link} to="/Admin/hire">
-                    <ListItemIcon>
-                        <LanguageIcon color={location.pathname.startsWith("/Admin/complains") ? 'primary' : 'inherit'} />
-                    </ListItemIcon>
-                    <ListItemText primary="Explore our community" />
-                </ListItemButton>
-
             </React.Fragment>
             <Divider sx={{ my: 1 }} />
             <React.Fragment>
